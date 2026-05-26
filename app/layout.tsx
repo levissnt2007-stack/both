@@ -10,27 +10,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: '100 Recetas para Diabeticos | Ebook Digital Premium',
-  description: 'Descubre 100 recetas deliciosas y equilibradas pensadas para ayudarte a cuidar la glucosa. Comidas simples, practicas y para toda la familia.',
-  keywords: ['recetas diabeticos', 'cocina saludable', 'control glucosa', 'ebook recetas', 'alimentacion diabeticos'],
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-    ],
-  },
+  description: 'Descubre 100 recetas deliciosas y equilibradas pensadas para ayudarte a cuidar la glucosa.',
 }
 
 export const viewport: Viewport = {
   themeColor: '#f5f0e8',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 5,
 }
 
 export default function RootLayout({

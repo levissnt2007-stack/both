@@ -1,9 +1,3 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { writeFileSync } from "fs";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 const nextConfig = {
   output: "export",
   images: {
@@ -12,4 +6,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsiZGF0YSI6MTYyNDMxNDcwLCJwdXIiOiJibG9iX2lkIn19--94f35ff5da65a05c24b48940d600aa0fc1528ca4/next.config.mjs

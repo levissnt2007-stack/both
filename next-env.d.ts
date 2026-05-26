@@ -3,4 +3,3 @@
 
 // NOTE: This file should not be edited
 // see https://nextjs.org/docs/app/api-reference/config/typescript for more information.
-https://stackblitz.com/storage/blobs/eyJfcmFpbHMiOnsiZGF0YSI6MTYyNDMxNDcxLCJwdXIiOiJibG9iX2lkIn19--1ecdc8ac4663956155b5f6e90a5a2eed260da5e4/next-env.d.ts

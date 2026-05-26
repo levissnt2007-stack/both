@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import { Check, BookOpen, Heart, Users, Sparkles, ArrowRight, Clock, ChefHat } from "lucide-react"
 
 const benefits = [
@@ -14,47 +13,16 @@ const benefits = [
 ]
 
 const features = [
-  {
-    icon: Clock,
-    title: "Recetas Rapidas",
-    description: "Platos listos en menos de 30 minutos",
-  },
-  {
-    icon: Heart,
-    title: "Control de Glucosa",
-    description: "Ingredientes seleccionados para cuidar tu salud",
-  },
-  {
-    icon: ChefHat,
-    title: "Faciles de Preparar",
-    description: "Instrucciones paso a paso para todos los niveles",
-  },
-  {
-    icon: Users,
-    title: "Para Toda la Familia",
-    description: "Sabores que encantan a pequeños y grandes",
-  },
+  { icon: Clock, title: "Recetas Rapidas", description: "Platos listos en menos de 30 minutos" },
+  { icon: Heart, title: "Control de Glucosa", description: "Ingredientes seleccionados para cuidar tu salud" },
+  { icon: ChefHat, title: "Faciles de Preparar", description: "Instrucciones paso a paso para todos los niveles" },
+  { icon: Users, title: "Para Toda la Familia", description: "Sabores que encantan a pequeños y grandes" },
 ]
 
 const testimonials = [
-  {
-    name: "Maria Garcia",
-    role: "Madre de familia",
-    content: "Las recetas son deliciosas y muy faciles de seguir. Mi familia las ama!",
-    rating: 5,
-  },
-  {
-    name: "Carlos Rodriguez",
-    role: "Paciente diabetico",
-    content: "Por fin puedo disfrutar de comidas sabrosas sin preocuparme por mi glucosa.",
-    rating: 5,
-  },
-  {
-    name: "Ana Martinez",
-    role: "Nutricionista",
-    content: "Recomiendo este ebook a todos mis pacientes. Las recetas estan muy bien pensadas.",
-    rating: 5,
-  },
+  { name: "Maria Garcia", role: "Madre de familia", content: "Las recetas son deliciosas y muy faciles de seguir!", rating: 5 },
+  { name: "Carlos Rodriguez", role: "Paciente diabetico", content: "Por fin puedo disfrutar de comidas sabrosas sin preocuparme.", rating: 5 },
+  { name: "Ana Martinez", role: "Nutricionista", content: "Recomiendo este ebook a todos mis pacientes.", rating: 5 },
 ]
 
 export default function Home() {
@@ -88,34 +56,30 @@ export default function Home() {
               100 Recetas Deliciosas Para <span className="text-primary">Diabeticos</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl">
-              Descubre recetas faciles, equilibradas y deliciosas para cuidar tu glucosa sin sacrificar el sabor. Comidas practicas para toda la familia.
+              Descubre recetas faciles, equilibradas y deliciosas para cuidar tu glucosa sin sacrificar el sabor.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="btn-green gap-2">
                 Descargar Ahora
                 <ArrowRight className="h-4 w-4" />
               </Button>
-              <Button size="lg" variant="outline">
-                Ver Recetas
-              </Button>
+              <Button size="lg" variant="outline">Ver Recetas</Button>
             </div>
           </div>
-          <div className="animate-fade-in animation-delay-200">
-            <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Recetas saludables"
-                className="rounded-2xl shadow-2xl w-full"
-              />
-              <div className="absolute -bottom-4 -left-4 bg-card p-4 rounded-xl shadow-lg border">
-                <div className="flex items-center gap-3">
-                  <div className="bg-primary/10 p-2 rounded-full">
-                    <Check className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">+1000 Descargas</p>
-                    <p className="text-sm text-muted-foreground">Este mes</p>
-                  </div>
+          <div className="relative">
+            <img
+              src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Recetas saludables"
+              className="rounded-2xl shadow-2xl w-full"
+            />
+            <div className="absolute -bottom-4 -left-4 bg-card p-4 rounded-xl shadow-lg border">
+              <div className="flex items-center gap-3">
+                <div className="bg-primary/10 p-2 rounded-full">
+                  <Check className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold">+1000 Descargas</p>
+                  <p className="text-sm text-muted-foreground">Este mes</p>
                 </div>
               </div>
             </div>
@@ -124,12 +88,10 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section id="beneficios" className="py-16 md:py-20 px-4 md:px-8 lg:px-16 bg-card/50 section-divider">
+      <section id="beneficios" className="py-16 md:py-20 px-4 bg-card/50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              ¿Que Encontraras?
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">¿Que Encontraras?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Todo lo que necesitas para preparar comidas deliciosas y saludables
             </p>
@@ -150,12 +112,8 @@ export default function Home() {
       {/* Features Section */}
       <section id="recetas" className="py-16 md:py-20 px-4 container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            ¿Por Que Elegir Nuestras Recetas?
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Cada receta esta pensada para ofrecerte lo mejor
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">¿Por Que Elegir Nuestras Recetas?</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Cada receta esta pensada para ofrecerte lo mejor</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
@@ -174,17 +132,11 @@ export default function Home() {
         </div>
       </section>
 
-      <Separator className="my-8 max-w-4xl mx-auto" />
-
       {/* Testimonials Section */}
       <section id="testimonios" className="py-16 md:py-20 px-4 container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Lo Que Dicen Nuestros Usuarios
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Miles de personas ya disfrutan de estas recetas
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Lo Que Dicen Nuestros Usuarios</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Miles de personas ya disfrutan de estas recetas</p>
         </div>
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
@@ -211,9 +163,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-primary text-primary-foreground py-16 md:py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Comienza a Cocinar Saludable Hoy
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Comienza a Cocinar Saludable Hoy</h2>
           <p className="mb-8 opacity-90 max-w-md mx-auto">
             Obtén acceso inmediato a 100 recetas deliciosas para diabeticos
           </p>
@@ -233,9 +183,7 @@ export default function Home() {
                 <BookOpen className="h-6 w-6 text-primary" />
                 <span className="text-xl font-bold">Recetas Saludables</span>
               </div>
-              <p className="text-sm text-muted-foreground">
-                Recetas deliciosas y saludables para toda la familia.
-              </p>
+              <p className="text-sm text-muted-foreground">Recetas deliciosas y saludables para toda la familia.</p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Enlaces</h3>
@@ -253,7 +201,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <Separator className="my-8" />
+          <div className="border-t my-8" />
           <p className="text-center text-sm text-muted-foreground">
             © 2024 Recetas Saludables. Todos los derechos reservados.
           </p>
